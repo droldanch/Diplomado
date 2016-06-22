@@ -380,20 +380,6 @@
                 android:layout_weight=".25"
                 >
                 <Button
-                    android:id="@+id/tecla_decimal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="Decimal"
-                    android:textColor="@color/colorNumeros"
-                    android:textSize="@dimen/tamañpLetreros"
-                    android:background="@color/fondoTexto"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25">
-                <Button
                     android:id="@+id/tecla_borrar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -415,6 +401,20 @@
                     android:text="Limpiar"
                     android:textColor="@color/colorNumeros"
                     android:textSize="@dimen/tamañpLetreros"
+                    android:background="@color/fondoTexto"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".25">
+                <Button
+                    android:id="@+id/tecla_modulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="%"
+                    android:textColor="@color/colorNumeros"
+                    android:textSize="@dimen/tamañoOperadores"
                     android:background="@color/fondoTexto"/>
             </LinearLayout>
         </LinearLayout>

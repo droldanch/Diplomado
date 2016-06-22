@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button boton_menos;
     Button boton_multiplica;
     Button boton_divide;
-    Button boton_decimal;
+    Button boton_modulo;
     Button boton_binario;
     Button boton_limpia;
     Button boton_borra;
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boton_multiplica = (Button) findViewById(R.id.tecla_multiplicar);
         boton_divide = (Button) findViewById(R.id.tecla_div);
 
-        boton_decimal = (Button) findViewById(R.id.tecla_decimal);
+        boton_modulo = (Button) findViewById(R.id.tecla_modulo);
         boton_binario = (Button) findViewById(R.id.tecla_binario);
         boton_limpia = (Button) findViewById(R.id.tecla_limpiar);
         boton_borra = (Button) findViewById(R.id.tecla_borrar);
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boton_menos.setTypeface(heroLight);
         boton_multiplica.setTypeface(heroLight);
         boton_divide.setTypeface(heroLight);
-        boton_decimal.setTypeface(heroLight);
+        boton_modulo.setTypeface(heroLight);
         boton_binario.setTypeface(heroLight);
         boton_limpia.setTypeface(heroLight);
         boton_borra.setTypeface(heroLight);
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tecla_multiplicar).setOnClickListener(this);
         findViewById(R.id.tecla_div).setOnClickListener(this);
 
-        findViewById(R.id.tecla_decimal).setOnClickListener(this);
+        findViewById(R.id.tecla_modulo).setOnClickListener(this);
         findViewById(R.id.tecla_binario).setOnClickListener(this);
         findViewById(R.id.tecla_limpiar).setOnClickListener(this);
         findViewById(R.id.tecla_borrar).setOnClickListener(this);
@@ -149,8 +149,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tecla_punto).setOnClickListener(this);
         findViewById(R.id.tecla_igual).setOnClickListener(this);
 
-        findViewById(R.id.tecla_binario).setOnClickListener(this);
-        findViewById(R.id.tecla_decimal).setOnClickListener(this);
+
+
     }
 
     @Override
@@ -246,8 +246,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 decimal();
                 break;
 
-            case R.id.tecla_decimal:
-                decimal();
+            case R.id.tecla_modulo:
+                operadores("%");
                 break;
 
         }
@@ -313,6 +313,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case "-":
                 totalf = numerof - numerof2;
+                totalString = Float.toString(totalf);
+                break;
+            case "%":
+                totalf = numerof % numerof2;
                 totalString = Float.toString(totalf);
                 break;
         }
@@ -383,7 +387,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boton_7.setVisibility(View.INVISIBLE);
         boton_8.setVisibility(View.INVISIBLE);
         boton_9.setVisibility(View.INVISIBLE);
-
+        boton_modulo.setClickable(false);
+        boton_modulo.setText("");
         boton_multiplica.setVisibility(View.INVISIBLE);
         boton_divide.setVisibility(View.INVISIBLE);
         boton_menos.setVisibility(View.INVISIBLE);
@@ -403,7 +408,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boton_7.setVisibility(View.VISIBLE);
         boton_8.setVisibility(View.VISIBLE);
         boton_9.setVisibility(View.VISIBLE);
-
+        boton_modulo.setClickable(true);
+        boton_modulo.setText("%");
         boton_multiplica.setVisibility(View.VISIBLE);
         boton_divide.setVisibility(View.VISIBLE);
         boton_menos.setVisibility(View.VISIBLE);
