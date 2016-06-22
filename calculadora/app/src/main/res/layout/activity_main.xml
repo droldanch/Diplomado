@@ -32,7 +32,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight=".8">
-                <TextView
+                <EditText
+                    android:focusable="false"
                     android:id="@+id/operador"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -49,7 +50,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight=".2"
                 android:orientation="vertical">
-            <TextView
+            <EditText
+                android:focusable="false"
                 android:id="@+id/numero1"
                 android:layout_margin="@dimen/margin"
                  android:layout_width="match_parent"
@@ -57,9 +59,11 @@
                  android:layout_weight="1"
                  android:textColor="@color/colorNumeros"
                  android:text=" "
+                android:inputType="numberDecimal"
                  android:textAlignment="textEnd"
                  android:textSize="@dimen/tamañoNumero"/>
-            <TextView
+            <EditText
+                android:focusable="false"
                 android:id="@+id/numero2"
                 android:layout_margin="@dimen/margin"
                  android:layout_width="match_parent"
@@ -67,11 +71,13 @@
                  android:layout_weight="1"
                  android:textColor="@color/colorNumeros"
                  android:text=" "
+                android:inputType="numberDecimal"
                  android:textAlignment="textEnd"
                  android:textSize="@dimen/tamañoNumero"/>
             </LinearLayout>
         </LinearLayout>
-            <TextView
+            <EditText
+                android:focusable="false"
                 android:id="@+id/numeroTotal"
                 android:layout_margin="@dimen/margin"
                  android:layout_width="match_parent"
@@ -79,6 +85,7 @@
                  android:layout_weight="1"
                  android:textColor="@color/colorNumeros"
                  android:text=" "
+                android:inputType="numberDecimal"
                  android:textAlignment="textEnd"
                  android:textSize="@dimen/tamañoNumero"/>
 

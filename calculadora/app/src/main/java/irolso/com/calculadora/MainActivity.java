@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -32,10 +33,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button boton_borra;
     Button boton_igual;
     Button boton_puntoDeciamal;
-    TextView numero1;
-    TextView numero2;
-    TextView total;
-    TextView operador;
+    EditText numero1;
+    EditText numero2;
+    EditText total;
+    EditText operador;
     String numeroString1 = "";
     String numeroString2= "";
     String totalString = "";
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     boolean activarOperadores = true;
     Typeface heroLight;
     Typeface hero;
+    boolean bin = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,10 +118,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void iniciarComponentes(){
-        numero1 = (TextView) findViewById(R.id.numero1);
-        numero2 = (TextView) findViewById(R.id.numero2);
-        total =(TextView) findViewById(R.id.numeroTotal);
-        operador =(TextView) findViewById(R.id.operador);
+        numero1 = (EditText) findViewById(R.id.numero1);
+        numero2 = (EditText) findViewById(R.id.numero2);
+        total =(EditText) findViewById(R.id.numeroTotal);
+        operador =(EditText) findViewById(R.id.operador);
 
     }
     public void listener(){
@@ -147,6 +149,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tecla_punto).setOnClickListener(this);
         findViewById(R.id.tecla_igual).setOnClickListener(this);
 
+        findViewById(R.id.tecla_binario).setOnClickListener(this);
+        findViewById(R.id.tecla_decimal).setOnClickListener(this);
     }
 
     @Override
@@ -156,6 +160,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 funcionNumeros("0");
                 break;
             case R.id.tecla_1:
+
                 funcionNumeros("1");
                 break;
             case R.id.tecla_2:
@@ -184,6 +189,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.tecla_punto:
+
+                if(bin){
                 if(numeroprimero) {
                     if (banderaPunto) {
                         numeroString1 += ".";
@@ -197,6 +204,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         banderaPunto2 = false;
                     }
                 }
+                }else{
+                    funcionNumeros("1");
+                    banderaPunto = false;
+                }
+
                 break;
 
 
@@ -227,8 +239,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 borrar();
                 break;
 
+            case R.id.tecla_binario:
+                if(bin)
+                binario();
+                else
+                decimal();
+                break;
+
+            case R.id.tecla_decimal:
+                decimal();
+                break;
+
         }
     }
+
 
     private void borrar() {
         if(numeroprimero){
@@ -266,10 +290,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Float numerof = Float.parseFloat(numeroString1);
         Float numerof2 = Float.parseFloat(numeroString2);
 
+
         switch (operadorString){
             case "+":
+            if(bin){
                 totalf = numerof + numerof2;
                 totalString = Float.toString(totalf);
+            }else{
+                int numero1b = Integer.parseInt(numeroString1,2);
+                int numero2b = Integer.parseInt(numeroString2,2);
+                int totalb = numero1b + numero2b;
+                totalString = Integer.toBinaryString(totalb);
+            }
                 break;
             case "x":
                 totalf = numerof * numerof2;
@@ -338,7 +370,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void binario(){
+        boton_binario.setText("DECIMAL");
+        limpiar();
         boton_puntoDeciamal.setText("1");
+        bin = false;
         boton_1.setVisibility(View.INVISIBLE);
         boton_2.setVisibility(View.INVISIBLE);
         boton_3.setVisibility(View.INVISIBLE);
@@ -353,4 +388,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boton_divide.setVisibility(View.INVISIBLE);
         boton_menos.setVisibility(View.INVISIBLE);
     }
+
+    private void decimal() {
+        boton_binario.setText("BINARIO");
+        limpiar();
+        boton_puntoDeciamal.setText(".");
+        bin = true;
+        boton_1.setVisibility(View.VISIBLE);
+        boton_2.setVisibility(View.VISIBLE);
+        boton_3.setVisibility(View.VISIBLE);
+        boton_4.setVisibility(View.VISIBLE);
+        boton_5.setVisibility(View.VISIBLE);
+        boton_6.setVisibility(View.VISIBLE);
+        boton_7.setVisibility(View.VISIBLE);
+        boton_8.setVisibility(View.VISIBLE);
+        boton_9.setVisibility(View.VISIBLE);
+
+        boton_multiplica.setVisibility(View.VISIBLE);
+        boton_divide.setVisibility(View.VISIBLE);
+        boton_menos.setVisibility(View.VISIBLE);
+    }
+
 }
