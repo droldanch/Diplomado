@@ -255,20 +255,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void borrar() {
+
         if(numeroprimero){
+
             if(!numeroString1.equals("")){
         numeroString1 = numeroString1.substring(0, numeroString1.length()-1);
         numero1.setText(numeroString1);
                 borrarTotal();
             }
+
         }else{
             if(!numeroString2.equals("")) {
                 numeroString2 = numeroString2.substring(0, numeroString2.length() - 1);
                 numero2.setText(numeroString2);
+                operadorString= "";
+                operador.setText(operadorString);
                 borrarTotal();
+            }else
+                numeroprimero=true;
             }
         }
-    }
+
 
     private void limpiar() {
         activarOperadores = true;

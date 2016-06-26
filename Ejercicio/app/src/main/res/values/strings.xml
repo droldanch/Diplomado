@@ -14,4 +14,8 @@
     <string name="name">Nombre</string>
     <string name="agregar">Agregar</string>
     <string name="text_vacio">Agrega Texto</string>
+    <string name="Register">Registrar</string>
+    <string name="Remember">Recordar Datos</string>
+    <string name="registrado">Registrado</string>
+    <string name="messege_need_register">Necesitas Registrarte</string>
 </resources>

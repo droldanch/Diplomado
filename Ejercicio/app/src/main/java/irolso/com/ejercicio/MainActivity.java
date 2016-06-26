@@ -9,11 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import irolso.com.ejercicio.sql.ItemDataSource;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button Singin;
     EditText Edit_User,Edit_Pass;
-
+    private ItemDataSource itemDataSource;
 
 
     @Override
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         inicializarComponentes();
         findViewById(R.id.Button_SingIn).setOnClickListener(this);
+        findViewById(R.id.Button_Register).setOnClickListener(this);
+        itemDataSource= new ItemDataSource(this);
     }
 
     private void inicializarComponentes() {
@@ -36,11 +40,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Button_SingIn:
                 VerificarLogin();
                 break;
+            case R.id.Button_Register:
+                Registrar();
+                break;
         }
     }
 
-    private void VerificarLogin() {
-        //no nececitamos validar si mUser o mPassword ==null, nunca será nulo si fue "inflado" en el setcontentview
+    private void Registrar() {
         String user =Edit_User.getText().toString();
         String pass =Edit_Pass.getText().toString();
         if(TextUtils.isEmpty(user))
@@ -48,7 +54,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if(TextUtils.isEmpty(pass))
             Toast.makeText(getApplicationContext(),R.string.pass_empty,Toast.LENGTH_SHORT).show();
         else
+            Toast.makeText(getApplicationContext(),R.string.registrado,Toast.LENGTH_SHORT).show();
+            itemDataSource.saveUser(user,pass,"0","0");
+
+    }
+
+    private void VerificarLogin() {
+
+        String user =Edit_User.getText().toString();
+        String pass =Edit_Pass.getText().toString();
+        if(TextUtils.isEmpty(user))
+            Toast.makeText(getApplicationContext(),R.string.login_empty,Toast.LENGTH_SHORT).show();
+        else if(TextUtils.isEmpty(pass))
+            Toast.makeText(getApplicationContext(),R.string.pass_empty,Toast.LENGTH_SHORT).show();
+        else if(itemDataSource.loginDB(user,pass))
             startActivity(new Intent(getApplicationContext(),ActivityContenido.class).putExtra("user",user));
+        else
+            Toast.makeText(getApplicationContext(),R.string.messege_need_register,Toast.LENGTH_SHORT).show();
     }
 
 }

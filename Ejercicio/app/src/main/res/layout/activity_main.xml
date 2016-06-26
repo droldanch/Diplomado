@@ -24,13 +24,40 @@
         android:layout_below="@+id/EditText_User"
         android:inputType="textPassword"/>
 
+ <CheckBox
+     android:id="@+id/CheckboxRemember"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/EditText_Pass"
+     android:text="@string/Remember"/>
+
+ <LinearLayout
+     android:layout_below="@+id/CheckboxRemember"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+
+<Button
+    android:id="@+id/Button_Register"
+    android:text="@string/Register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/EditText_Pass"
+    android:layout_alignEnd="@+id/EditText_Pass"
+    android:layout_weight=".5"/>
+
 <Button
     android:id="@+id/Button_SingIn"
     android:text="@string/SingIn"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@+id/EditText_Pass"
-    android:layout_alignEnd="@+id/EditText_Pass" />
+    android:layout_alignEnd="@+id/EditText_Pass"
+    android:layout_weight=".5"/>
+
+
+
+ </LinearLayout>
 
 
 

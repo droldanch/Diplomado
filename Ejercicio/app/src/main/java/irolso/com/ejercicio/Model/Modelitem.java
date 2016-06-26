@@ -6,4 +6,7 @@ package irolso.com.ejercicio.Model;
 public class Modelitem {
     public int id;
     public String name;
+    public String pass;
+    public String time;
+    public String date;
 }
