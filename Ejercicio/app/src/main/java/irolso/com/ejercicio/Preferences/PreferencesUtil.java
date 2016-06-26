@@ -21,7 +21,7 @@ public class PreferencesUtil {
     {
         sp.edit().putString("user",modelitem.name).apply();
         sp.edit().putString("pass",modelitem.pass).apply();
-        sp.edit().putString("time",modelitem.time).apply();
+        sp.edit().putInt("time",modelitem.time).apply();
         sp.edit().putString("date",modelitem.date).apply();
     }
 
@@ -30,9 +30,9 @@ public class PreferencesUtil {
     {
         String user = sp.getString("user",null);
         String pass = sp.getString("pass",null);
-        String time = sp.getString("time",null);
+        int time = sp.getInt("time",0);
         String date = sp.getString("date",null);
-        if(TextUtils.isEmpty(user) || TextUtils.isEmpty(user) || TextUtils.isEmpty(time) || TextUtils.isEmpty(date))
+        if(TextUtils.isEmpty(user) || TextUtils.isEmpty(user)  || TextUtils.isEmpty(date))
             return null;
 
         return new Modelitem(user,pass,time,date);

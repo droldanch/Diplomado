@@ -29,6 +29,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/time" />
+
+    <TextView
+        android:layout_below="@+id/imagenUsuario"
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/time" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

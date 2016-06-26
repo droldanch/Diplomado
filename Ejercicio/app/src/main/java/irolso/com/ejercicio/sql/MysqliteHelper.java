@@ -30,7 +30,7 @@ public class MysqliteHelper extends SQLiteOpenHelper {
                     ColumnItem.ID_ITEM+" integer primary key autoincrement," +
                     ColumnItem.ITEM_NAME+" text not null," +
                     ColumnItem.ITEM_PASS+" text not null," +
-                    ColumnItem.ITEM_TIME+" text not null," +
+                    ColumnItem.ITEM_TIME+" INTEGER not null," +
                     ColumnItem.ITEM_DATE+" text not null )";
 
     public MysqliteHelper(Context context) {

@@ -7,10 +7,10 @@ public class Modelitem {
     public int id;
     public String name;
     public String pass;
-    public String time;
+    public int time;
     public String date;
 
-    public Modelitem(String name, String pass, String time, String date) {
+    public Modelitem(String name, String pass, int time, String date) {
         this.name = name;
         this.pass = pass;
         this.time = time;

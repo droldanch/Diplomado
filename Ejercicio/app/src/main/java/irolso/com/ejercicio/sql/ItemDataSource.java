@@ -19,7 +19,7 @@ public class ItemDataSource {
         sqLiteDatabase = openHelper.getWritableDatabase();
     }
 
-    public void saveUser(String name,String pass,String time,String date)
+    public void saveUser(String name,String pass,int time,String date)
     {
         ContentValues contentValues = new ContentValues();
         contentValues.put(MysqliteHelper.ColumnItem.ITEM_NAME,name);
@@ -31,15 +31,12 @@ public class ItemDataSource {
 
     }
 
-    public void saveTime(String time,String date)
+    public void saveTime(String time,String user)
     {
         ContentValues contentValues = new ContentValues();
         contentValues.put(MysqliteHelper.ColumnItem.ITEM_TIME,time);
-        contentValues.put(MysqliteHelper.ColumnItem.ITEM_DATE,date);
-
-
-        sqLiteDatabase.insert(MysqliteHelper.ITEM_TABLE_NAME,null,contentValues);
-
+        String[] args = new String[]{user};
+        sqLiteDatabase.update(MysqliteHelper.ITEM_TABLE_NAME,contentValues,"name=?",args);
     }
 
 
@@ -59,6 +56,39 @@ public class ItemDataSource {
         }
 
         cursor.close();
+        return access;
+    }
+
+    public int Time(String name) {
+
+        int access = 0;
+        Cursor cursor = sqLiteDatabase.query(MysqliteHelper.ITEM_TABLE_NAME, new String[] {"date"}, "name" + "='"+name+"'" , null, null, null, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                access = cursor.getInt(0);
+            } while (cursor.moveToNext());
+        }
+
+
+
+        return access;
+    }
+
+    public String Fecha(String name) {
+
+        String access = "";
+        Cursor cursor = sqLiteDatabase.query(MysqliteHelper.ITEM_TABLE_NAME, new String[] {"time"}, "name='"+name+"'" , null, null, null, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                access = cursor.getString(0);
+
+            } while (cursor.moveToNext());
+        }
+
+
+
         return access;
     }
 

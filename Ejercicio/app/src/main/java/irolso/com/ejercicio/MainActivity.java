@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(getApplicationContext(),R.string.existe,Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(getApplicationContext(), R.string.registrado, Toast.LENGTH_SHORT).show();
-            itemDataSource.saveUser(user, pass, "0", "0");
+            itemDataSource.saveUser(user, pass,11 ,"9");
         }
     }
 
@@ -98,11 +98,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if(itemDataSource.loginDB(user,pass)) {
 
             if(checkremember.isChecked()) {
-                new PreferencesUtil(getApplicationContext()).saveUser(new Modelitem(user,pass,"0",fecha));
+                new PreferencesUtil(getApplicationContext()).saveUser(new Modelitem(user,pass,0,fecha));
             }
-
-            startActivity(new Intent(getApplicationContext(), ActivityContenido.class).putExtra("user", user));
-
+            itemDataSource.saveTime(fecha,user);
+            startActivity(new Intent(getApplicationContext(), ActivityContenido.class).putExtra("user", user).putExtra("fecha",fecha));
+            finish();
         }
         else
             Toast.makeText(getApplicationContext(),R.string.messege_need_register,Toast.LENGTH_SHORT).show();

@@ -23,4 +23,5 @@
     <string name="conexion">Ultima conexion :</string>
     <string name="time">Ultima conexion</string>
     <string name="Close">Cerrar Sesion</string>
+    <string name="sesion">Tiempo de uso de app :</string>
 </resources>

@@ -20,6 +20,7 @@
             android:name=".ActivityContenido"
             android:label="@string/title_activity_activity_contenido"
             android:theme="@style/AppTheme"></activity>
+        <service android:name=".Sevice.ServiceFecha"/>
     </application>
 
 </manifest>
