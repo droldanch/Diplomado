@@ -9,4 +9,11 @@ public class Modelitem {
     public String pass;
     public String time;
     public String date;
+
+    public Modelitem(String name, String pass, String time, String date) {
+        this.name = name;
+        this.pass = pass;
+        this.time = time;
+        this.date = date;
+    }
 }

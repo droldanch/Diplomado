@@ -24,15 +24,25 @@
         android:layout_below="@+id/EditText_User"
         android:inputType="textPassword"/>
 
+
  <CheckBox
+     android:layout_below="@+id/EditText_Pass"
      android:id="@+id/CheckboxRemember"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:layout_below="@+id/EditText_Pass"
-     android:text="@string/Remember"/>
+     android:text="@string/Remember"
+     android:layout_weight=".5"/>
+  <TextView
+      android:layout_below="@+id/CheckboxRemember"
+      android:id="@+id/MainFecha"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight=".5"
+      android:text=""
+      />
 
  <LinearLayout
-     android:layout_below="@+id/CheckboxRemember"
+     android:layout_below="@+id/MainFecha"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:orientation="horizontal">

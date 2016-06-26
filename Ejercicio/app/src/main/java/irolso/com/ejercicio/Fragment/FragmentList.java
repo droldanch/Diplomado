@@ -50,11 +50,7 @@ public class FragmentList extends Fragment  {
                 String itemData = mItemsText.getText().toString();
                 if(!TextUtils.isEmpty(itemData))
                 {
-                    Modelitem item =new Modelitem();
-                    item.name=itemData;
-                    array.add(item);
-                    listView.setAdapter(new AdapterItem(getActivity(),array));
-                    mItemsText.setText("");
+
                 }
 
             }

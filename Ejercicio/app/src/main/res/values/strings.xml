@@ -18,4 +18,9 @@
     <string name="Remember">Recordar Datos</string>
     <string name="registrado">Registrado</string>
     <string name="messege_need_register">Necesitas Registrarte</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="existe">Usuario ya existe</string>
+    <string name="conexion">Ultima conexion :</string>
+    <string name="time">Ultima conexion</string>
+    <string name="Close">Cerrar Sesion</string>
 </resources>
