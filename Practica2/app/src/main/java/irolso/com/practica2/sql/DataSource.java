@@ -107,4 +107,12 @@ public class DataSource {
         contentValues.put(MySqliteHelper.ColumnItem.DETALLE,modelItem.Detalle);
         return db.update( MySqliteHelper.TABLE_APP, contentValues, MySqliteHelper.ColumnItem.ID + " = " + modelItem.ID,null);
     }
+
+    public int Actualizar(ModelListApp modelItem)
+    {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(MySqliteHelper.ColumnItem.UPDATE,modelItem.Update);
+
+        return db.update( MySqliteHelper.TABLE_APP, contentValues, MySqliteHelper.ColumnItem.ID + " = " + modelItem.ID,null);
+    }
 }

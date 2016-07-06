@@ -24,6 +24,7 @@
             android:label="@string/app_detalles"/>
         <activity android:name=".AddActivity"
             android:label="@string/app_add"></activity>
+        <service android:name=".Service.Notification"></service>
     </application>
 
 </manifest>

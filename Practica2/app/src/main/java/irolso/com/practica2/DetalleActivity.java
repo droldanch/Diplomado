@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import irolso.com.practica2.Service.Notification;
 import irolso.com.practica2.model.ModelListApp;
 import irolso.com.practica2.sql.DataSource;
 
@@ -85,6 +86,12 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
                 break;
 
             case R.id.DetalleActivityActualizar:
+                modelListApp.ID = id_recibido;
+                startService(new Intent(getApplicationContext(), Notification.class));
+                dataSource.Actualizar(modelListApp);
+                if(modelListApp.Update ==1){
+                    Actualizar.setEnabled(false);
+                }
                 break;
 
             case R.id.DetalleActivityDesistanlar:
@@ -127,7 +134,9 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
                 Desarrollador.setText(modelListApp.Desarrollador);
                 Detalle.setText(modelListApp.Detalle);
                 setTitle(modelListApp.Nombre);
-
+                    if(modelListApp.Update ==1){
+                        Actualizar.setEnabled(false);
+                    }
                 editlayout.setVisibility(LinearLayout.GONE);
                 detallelayout.setVisibility(LinearLayout.VISIBLE);
 
