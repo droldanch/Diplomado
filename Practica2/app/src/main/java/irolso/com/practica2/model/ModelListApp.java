@@ -10,4 +10,5 @@ public class ModelListApp {
     public Integer Instalada;
     public Integer Update;
     public String Detalle;
+    public Integer Imagen;
 }

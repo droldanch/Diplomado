@@ -9,6 +9,8 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 import irolso.com.practica2.model.ModelListApp;
 import irolso.com.practica2.sql.DataSource;
 
@@ -37,6 +39,11 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
         switch (v.getId()){
             case R.id.AddActivitySave:
                 if(!Nombre.getText().toString().equals("")&&!Desarrollador.getText().toString().equals("")&&!Detalle.getText().toString().equals("")) {
+                    int min = 1;
+                    int max = 9;
+
+                    Random r = new Random();
+                    int i1 = r.nextInt(max - min + 1) + min;
                 modelListApp.Nombre = Nombre.getText().toString();
                 modelListApp.Desarrollador = Desarrollador.getText().toString();
                 modelListApp.Detalle = Detalle.getText().toString();
@@ -45,6 +52,7 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
                 else
                     modelListApp.Update= 0;
                 modelListApp.Instalada = 1;
+                    modelListApp.Imagen = i1;
                 dataSource.saveItem(modelListApp);
                 Intent intent = new Intent(AddActivity.this, MainActivity.class);
                 startActivity(intent);

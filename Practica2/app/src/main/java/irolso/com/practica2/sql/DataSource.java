@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.provider.ContactsContract;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,7 +32,7 @@ public class DataSource {
         contentValues.put(MySqliteHelper.ColumnItem.INSTALADA,modelItem.Instalada);
         contentValues.put(MySqliteHelper.ColumnItem.UPDATE,modelItem.Update);
         contentValues.put(MySqliteHelper.ColumnItem.DETALLE,modelItem.Detalle);
-
+        contentValues.put(MySqliteHelper.ColumnItem.IMAGEN,modelItem.Imagen);
         db.insert(MySqliteHelper.TABLE_APP,null,contentValues);
     }
 
@@ -53,7 +54,7 @@ public class DataSource {
             int Instalada = cursor.getInt(cursor.getColumnIndexOrThrow(MySqliteHelper.ColumnItem.INSTALADA));
             int Update = cursor.getInt(cursor.getColumnIndexOrThrow(MySqliteHelper.ColumnItem.UPDATE));
             String Detalle =cursor.getString(cursor.getColumnIndexOrThrow(MySqliteHelper.ColumnItem.DETALLE));
-
+            int Imagen = cursor.getInt(cursor.getColumnIndexOrThrow(MySqliteHelper.ColumnItem.IMAGEN));
             ModelListApp modelItem = new ModelListApp();
 
             modelItem.ID=ID;
@@ -62,7 +63,7 @@ public class DataSource {
             modelItem.Instalada=Instalada;
             modelItem.Update=Update;
             modelItem.Detalle=Detalle;
-
+            modelItem.Imagen= Imagen;
             modelItemList.add(modelItem);
         }
 

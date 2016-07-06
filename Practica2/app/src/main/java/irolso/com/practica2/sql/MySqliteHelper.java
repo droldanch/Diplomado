@@ -22,7 +22,7 @@ public class MySqliteHelper extends SQLiteOpenHelper {
         public static final String INSTALADA = "instalada";
         public static final String UPDATE = "subir";
         public static final String DETALLE = "detalle";
-
+        public static final String IMAGEN = "imagen";
     }
 
 
@@ -34,7 +34,8 @@ public class MySqliteHelper extends SQLiteOpenHelper {
                     ColumnItem.DESARROLLADOR  +" varchar(50), "+
                     ColumnItem.INSTALADA  +" integer,         "+
                     ColumnItem.UPDATE +" integer,             "+
-                    ColumnItem.DETALLE +" varchar(50))        ";
+                    ColumnItem.DETALLE +" varchar(50),        "+
+                    ColumnItem.IMAGEN +" integer)        ";
 
     public MySqliteHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);

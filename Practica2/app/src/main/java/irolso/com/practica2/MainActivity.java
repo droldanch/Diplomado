@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     List<ModelListApp> modelItemList;
     ListView AppList;
     DataSource dataSource;
+    TextView mensaje;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
         dataSource = new DataSource(this);
         AppList = (ListView) findViewById(R.id.ActivityMainListApp);
         modelItemList = dataSource.getAllItems();
+
+        mensaje = (TextView) findViewById(R.id.ActivityMainTextView);
+
+        if(modelItemList.isEmpty()) {
+            mensaje.setText(getString(R.string.sinApp));
+        }
+        else {
+            mensaje.setText("");
+        }
+
         AppList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

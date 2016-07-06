@@ -1,9 +1,11 @@
 package irolso.com.practica2;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -22,6 +24,7 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
     int id_recibido;
     DataSource dataSource;
     ModelListApp modelListApp;
+    Button Abrir,Actualizar,Desistalar,Editar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,17 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
         Desarrollador.setText(modelListApp.Desarrollador);
         Detalle.setText(modelListApp.Detalle);
         setTitle(modelListApp.Nombre);
+
+        Abrir = (Button) findViewById(R.id.DetalleActivityAbrir);
+        Actualizar=(Button) findViewById(R.id.DetalleActivityActualizar);
+        Desistalar=(Button) findViewById(R.id.DetalleActivityDesistanlar);
+        Editar =(Button) findViewById(R.id.DetalleActivityEditar);
+
+        if(modelListApp.Update ==1){
+            Actualizar.setEnabled(false);
+        }
+
+        findViewById(R.id.DetalleActivityEditarSave).
         findViewById(R.id.DetalleActivityAbrir).setOnClickListener(this);
         findViewById(R.id.DetalleActivityActualizar).setOnClickListener(this);
         findViewById(R.id.DetalleActivityDesistanlar).setOnClickListener(this);
@@ -52,7 +66,6 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
     public void recibirdatos(){
         Bundle bundle = this.getIntent().getExtras();
         id_recibido = bundle.getInt("id");
-
     }
 
     @Override
@@ -66,12 +79,22 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.DetalleActivityAbrir:
+                String url = "https://play.google.com/store/search?q="+modelListApp.Nombre;
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
                 break;
 
             case R.id.DetalleActivityActualizar:
                 break;
 
             case R.id.DetalleActivityDesistanlar:
+                modelListApp.ID = id_recibido;
+                dataSource.deleteItem(modelListApp);
+                Actualizar.setEnabled(false);
+                Desistalar.setEnabled(false);
+                Editar.setEnabled(false);
+                Abrir.setEnabled(false);
                 break;
 
             case R.id.DetalleActivityEditar:
