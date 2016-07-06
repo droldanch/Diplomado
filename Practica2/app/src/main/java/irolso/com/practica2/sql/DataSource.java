@@ -69,7 +69,7 @@ public class DataSource {
         return modelItemList;
     }
 
-    public ModelListApp llenarDetalles(String id)
+    public ModelListApp llenarDetalles(int id)
     {
         ModelListApp modelItem = new ModelListApp();
         Cursor cursor =db.query(MySqliteHelper.TABLE_APP,null,MySqliteHelper.ColumnItem.ID+"='"+id+"'",null,null,null,null);
@@ -96,7 +96,7 @@ public class DataSource {
         return modelItem;
     }
 
-    public int actualizar(ModelListApp modelItem)
+    public int editarApp(ModelListApp modelItem)
     {
         ContentValues contentValues = new ContentValues();
         contentValues.put(MySqliteHelper.ColumnItem.NOMBRE,modelItem.Nombre);

@@ -6,7 +6,6 @@
     android:orientation="vertical"
     tools:context="irolso.com.practica2.MainActivity">
 
-
     <ListView
 
         android:id="@+id/ActivityMainListApp"

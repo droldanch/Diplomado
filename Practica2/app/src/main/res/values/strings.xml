@@ -8,4 +8,11 @@
     <string name="intalada">Instalada</string>
     <string name="actualizada">Actualizada</string>
     <string name="falta">Falta ingresar Datos</string>
+    <string name="app_detalles">Detalles</string>
+    <string name="app_add">Agregar App</string>
+    <string name="add">Salvar</string>
+    <string name="editar">Editar</string>
+    <string name="desinstalar">Desinstalar</string>
+    <string name="abrir">Abrir</string>
+    <string name="actualizar">Actualizar</string>
 </resources>
