@@ -61,7 +61,7 @@ public class Notification extends Service {
                     .Builder(getApplicationContext())
                     .setContentTitle(getString(R.string.Actualizando))
                     .setContentText(getString(R.string.Actualizando))
-                 ;
+                    .setSmallIcon(android.R.drawable.ic_dialog_email);
         }
 
         @Override

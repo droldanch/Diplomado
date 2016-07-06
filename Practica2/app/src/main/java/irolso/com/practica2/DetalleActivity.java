@@ -88,12 +88,12 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.DetalleActivityActualizar:
                 modelListApp.ID = id_recibido;
                 startService(new Intent(getApplicationContext(), Notification.class));
-
                 dataSource.Actualizar(modelListApp);
                 modelListApp = dataSource.llenarDetalles(id_recibido);
                 if(modelListApp.Update == 1){
                     Actualizar.setEnabled(false);
                 }
+
                 break;
 
             case R.id.DetalleActivityDesistanlar:
