@@ -26,7 +26,6 @@ public class AdapterItem extends ArrayAdapter<Modelitem> {
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView==null)
 
-
         convertView= LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_item,parent,false);
 
         TextView id = (TextView) convertView.findViewById(R.id.row_item_id);
