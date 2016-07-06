@@ -20,7 +20,7 @@ public class MySqliteHelper extends SQLiteOpenHelper {
         public static final String NOMBRE = "nombre";
         public static final String DESARROLLADOR = "desarrollador";
         public static final String INSTALADA = "instalada";
-        public static final String UPDATE = "update";
+        public static final String UPDATE = "subir";
         public static final String DETALLE = "detalle";
 
     }
@@ -29,11 +29,11 @@ public class MySqliteHelper extends SQLiteOpenHelper {
     //Script de Creación de la tabla Quotes
     public static final String CREATE_TABLE_APP =
             "create table "+TABLE_APP+"(" +
-                    ColumnItem.ID+" varchar(50),              "+
+                    ColumnItem.ID+" integer primary key autoincrement,              "+
                     ColumnItem.NOMBRE +" varchar(50),         "+
                     ColumnItem.DESARROLLADOR  +" varchar(50), "+
-                    ColumnItem.INSTALADA  +" INTEGER,         "+
-                    ColumnItem.UPDATE +" INTEGER,             "+
+                    ColumnItem.INSTALADA  +" integer,         "+
+                    ColumnItem.UPDATE +" integer,             "+
                     ColumnItem.DETALLE +" varchar(50))        ";
 
     public MySqliteHelper(Context context) {

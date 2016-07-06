@@ -23,7 +23,6 @@ public class AdapterListApp extends ArrayAdapter<ModelListApp> {
         super(context, 0, objects);
 
     }
-    DecimalFormat currency = new DecimalFormat("$ ###,###.##");
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView==null)
@@ -34,14 +33,17 @@ public class AdapterListApp extends ArrayAdapter<ModelListApp> {
         ImageButton imagenApp = (ImageButton) convertView.findViewById(R.id.AdapterListAppButton);
         TextView textApp = (TextView) convertView.findViewById(R.id.AdapterListAppNombre);
         TextView textDesarrollador = (TextView) convertView.findViewById(R.id.AdapterListAppDesarrollador);
-        TextView textLeyenda = (TextView) convertView.findViewById(R.id.AdapterListAppLeyenda);
+        TextView textLeyenda = (TextView) convertView.findViewById(R.id.AdapterListAppUpdate);
 
 
         ModelListApp modelItem = getItem(position);
 
-        textApp.setText(modelItem.App);
+        textApp.setText(modelItem.Nombre);
         textDesarrollador.setText(modelItem.Desarrollador);
-        textDesarrollador.setText(modelItem.Leyenda);
+        if(modelItem.Update == 0)
+        textLeyenda.setText(getContext().getString(R.string.intalada));
+        else
+            textLeyenda.setText(getContext().getString(R.string.actualizada));
 
         return convertView;
     }

@@ -2,4 +2,10 @@
     <string name="app_name">Practica2</string>
     <string name="action_settings">Settings</string>
     <string name="agregar">Agregar</string>
+    <string name="Nombre">Nombre App</string>
+    <string name="Desarrollador">Desarrollador</string>
+    <string name="Detalle">Detalle</string>
+    <string name="intalada">Instalada</string>
+    <string name="actualizada">Actualizada</string>
+    <string name="falta">Falta ingresar Datos</string>
 </resources>

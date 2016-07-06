@@ -1,5 +1,6 @@
 package irolso.com.practica2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,16 +9,38 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import java.util.List;
+
+import irolso.com.practica2.adapter.AdapterListApp;
+import irolso.com.practica2.model.ModelListApp;
+import irolso.com.practica2.sql.DataSource;
 
 public class MainActivity extends AppCompatActivity {
 
+    List<ModelListApp> modelItemList;
+    ListView AppList;
+    DataSource dataSource;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        dataSource = new DataSource(this);
+        AppList = (ListView) findViewById(R.id.ActivityMainListApp);
+        modelItemList = dataSource.getAllItems();
+        AppList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(MainActivity.this, DetalleActivity.class);
+                intent.putExtra("id",modelItemList.get(position).ID);
+                startActivity(intent);
+                finish();
+            }
+        });
 
+        AppList.setAdapter(new AdapterListApp(this, modelItemList));
     }
 
     @Override
@@ -36,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(MainActivity.this, AddActivity.class);
+            startActivity(intent);
+            finish();
             return true;
         }
 
