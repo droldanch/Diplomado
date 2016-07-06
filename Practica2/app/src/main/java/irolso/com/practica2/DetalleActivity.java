@@ -55,7 +55,6 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
             Actualizar.setEnabled(false);
         }
 
-        findViewById(R.id.DetalleActivityEditarSave).
         findViewById(R.id.DetalleActivityAbrir).setOnClickListener(this);
         findViewById(R.id.DetalleActivityActualizar).setOnClickListener(this);
         findViewById(R.id.DetalleActivityDesistanlar).setOnClickListener(this);
