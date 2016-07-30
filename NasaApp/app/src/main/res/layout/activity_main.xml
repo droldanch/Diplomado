@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="irolso.com.nasaapp.MainActivity"
+    android:background="@color/colorPrimary">
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageNasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DatePadding"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"/>
+
+
+
+ <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textoPadding"
+        android:layout_marginRight="@dimen/textoPadding"
+        android:layout_marginBottom="@dimen/textoPadding">
+     <TextView
+         android:id="@+id/titleNasa"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/textoPadding"
+         android:layout_marginRight="@dimen/textoPadding"
+         android:layout_marginBottom="@dimen/textoPadding"
+         android:textColor="@color/white"
+         android:textSize="@dimen/titleText"/>
+     
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+</ScrollView>
+    <TextView
+        android:id="@+id/copyRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/textoPadding"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+
+</RelativeLayout>

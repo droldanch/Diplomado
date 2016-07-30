@@ -1,4 +1,4 @@
-package irolso.com.practica2.Service;
+package irolso.com.practica2.sql;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -97,10 +97,8 @@ public class Notification extends Service {
                 mNotif.setContentText(getString(R.string.ActualizacionCompleta));
                 mNotif.setAutoCancel(true);
                 PendingIntent pendingIntent =PendingIntent.
-                        getActivity(getApplicationContext(),
-                                0,new Intent(getApplicationContext(), DetalleActivity.class),PendingIntent.FLAG_UPDATE_CURRENT);
+                getActivity(getApplicationContext(),0,new Intent(getApplicationContext(),DetalleActivity.class).putExtra("id",id),PendingIntent.FLAG_UPDATE_CURRENT);
                 mNotif.setContentIntent(pendingIntent);
-
                 NotificationManager manager  = (NotificationManager)
                         getSystemService(Context.NOTIFICATION_SERVICE);
                 manager.notify(id,mNotif.build());

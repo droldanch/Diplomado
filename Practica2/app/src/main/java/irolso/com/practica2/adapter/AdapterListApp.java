@@ -5,15 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.squareup.picasso.Picasso;
-
-import java.text.DecimalFormat;
 import java.util.List;
-import java.util.Random;
 
 import irolso.com.practica2.R;
 import irolso.com.practica2.model.ModelListApp;

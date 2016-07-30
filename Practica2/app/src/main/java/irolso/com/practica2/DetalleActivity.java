@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import irolso.com.practica2.Service.Notification;
+import irolso.com.practica2.sql.Notification;
 import irolso.com.practica2.model.ModelListApp;
 import irolso.com.practica2.sql.DataSource;
 
