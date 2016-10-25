@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Nasa App</string>
+    <string name="app_name">Space DR</string>
+    <string name="menu_share">Share</string>
+    <string name="compartir">Compartir</string>
+    <string name="facebook_app_id">550948838422976</string>
+    <string name="SpaceDR">Space DR</string>
+    <string name="borrarFavoritos">¿Desea Borrar Lista ?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancelar</string>
 </resources>

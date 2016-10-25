@@ -3,18 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
 
     <com.facebook.drawee.view.SimpleDraweeView
-        android:layout_width="@dimen/sizeImageHeader"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/sizeImageHeader"
         android:src="@mipmap/ic_launcher"
-        android:layout_margin="15dp"/>
+        android:layout_marginTop="15dp"
+        android:id="@+id/userImage"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         tools:text="Daniel R"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:id="@+id/userName"
+        android:textSize="@dimen/sizeFontName"
+        android:textColor="@color/blanco"/>
 
 </LinearLayout>

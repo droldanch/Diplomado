@@ -6,13 +6,15 @@
     tools:context="irolso.com.nasaapp.ActivityDetalles"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorPrimary"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/detalles_container">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbarDetails"
-        android:background="@color/colorPrimary"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:elevation="8dp">
     </android.support.v7.widget.Toolbar>
 
