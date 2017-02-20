@@ -1,13 +1,70 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="irolso.com.lifesadventure.fragments.fragmentPerfil">
+    tools:context="irolso.com.lifesadventure.fragments.fragmentPerfil"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin">
 
-</FrameLayout>
+    <irolso.com.lifesadventure.CustomsElements.TextViewMedium
+        android:id="@+id/profileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:layout_margin="@dimen/activity_item_margin"
+        android:textSize="@dimen/titleText"
+        android:textColor="@color/white"/>
+
+    <irolso.com.lifesadventure.CustomsElements.TextViewMedium
+        android:id="@+id/profileApellidoP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellidoP"
+        android:layout_margin="@dimen/activity_item_margin"
+        android:textSize="@dimen/titleText"
+        android:textColor="@color/white"/>
+
+    <irolso.com.lifesadventure.CustomsElements.TextViewMedium
+        android:id="@+id/profileApellidoM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ApellidoM"
+        android:layout_margin="@dimen/activity_item_margin"
+        android:textSize="@dimen/titleText"
+        android:textColor="@color/white"/>
+
+    <irolso.com.lifesadventure.CustomsElements.TextViewMedium
+        android:id="@+id/profileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_email"
+        android:layout_margin="@dimen/activity_item_margin"
+        android:textSize="@dimen/titleText"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/sign_out_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/action_sign_out"
+        android:textStyle="bold"
+        android:textColor="@color/colorLetterLogin"
+        android:layout_alignParentBottom="true"
+        />
+
+</LinearLayout>

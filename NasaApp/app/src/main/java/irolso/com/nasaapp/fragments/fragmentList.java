@@ -15,7 +15,6 @@ import android.view.ViewGroup;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import irolso.com.nasaapp.ActivityDetalles;
 import irolso.com.nasaapp.BuildConfig;
 import irolso.com.nasaapp.R;
 import irolso.com.nasaapp.adapter.NasaApodAdapter;
@@ -54,11 +53,10 @@ public class fragmentList extends Fragment {
 
         nasaApodAdapter.setOnItemClickListener(new NasaApodAdapter.OnItemClickListener(){
 
-
             @Override
             public void onItemCLick(Photo photo) {
 
-                Intent intent = new Intent(getActivity(), ActivityDetalles.class);
+                Intent intent = new Intent();
 
                 //   Bundle bundle = new Bundle();
                 //  bundle.putSerializable("photo", photo);

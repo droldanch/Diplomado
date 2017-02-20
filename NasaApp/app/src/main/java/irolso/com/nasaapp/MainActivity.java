@@ -21,7 +21,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import irolso.com.nasaapp.fragments.fragmentFavoritos;
 import irolso.com.nasaapp.fragments.fragmentList;
 import irolso.com.nasaapp.fragments.fragmentToday;
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listing_navigation_activity);
-        ButterKnife.bind(this);
+
         setSupportActionBar(toolbar);
         toolbar.setLogo(R.drawable.logo5);
 
@@ -151,6 +150,10 @@ public class MainActivity extends AppCompatActivity {
 
         });*/
     }
+
+
+
+
 
     private void setFragment(Fragment fragment) {
         getFragmentManager().beginTransaction().replace(R.id.main_container,fragment).commit();

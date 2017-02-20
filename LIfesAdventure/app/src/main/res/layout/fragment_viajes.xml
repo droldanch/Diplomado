@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="irolso.com.lifesadventure.fragments.fragmentViajes">
+    tools:context="irolso.com.lifesadventure.fragments.fragmentViajes"
+>
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -11,7 +12,6 @@
         android:id="@+id/recyclerViewList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_item_margin"
         >
 
      </android.support.v7.widget.RecyclerView>

@@ -30,6 +30,10 @@ public class Viaje implements Serializable {
     @Expose
     private String imagen;
 
+    @SerializedName("price")
+    @Expose
+    private String price;
+
     public String getTitle() {return title;}
 
     public void setTitle(String title) {
@@ -76,7 +80,13 @@ public class Viaje implements Serializable {
         this.imagen = imagen;
     }
 
+    public String getPrice() {
+        return price;
+    }
 
+    public void setPrice(String price) {
+        this.price = price;
+    }
 
 
 }

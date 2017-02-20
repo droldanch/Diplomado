@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2FB03D116C24A7D60743AF2ED21F45B12550CE8C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2FB03D116C24A7D60743AF2ED21F45B12550CE8C" : 9223372036854775807,
+    "BC709C3288C3FE9F7E23A10BF35614B6FD260A03" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "59FAEE47-8B1B-4019-A3F9-D4B616EAA01B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2FB03D116C24A7D60743AF2ED21F45B12550CE8C" : "DiplomadoE\/",
+    "BC709C3288C3FE9F7E23A10BF35614B6FD260A03" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Lifes Adventure",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Lifes Adventure\/Lifes Adventure.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/droldanch\/Diplomado.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2FB03D116C24A7D60743AF2ED21F45B12550CE8C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/luisyanezmedina\/intelisis-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC709C3288C3FE9F7E23A10BF35614B6FD260A03"
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67272B9B1E5906770026CA5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67272B9A1E5906770026CA5B /* Extensions.swift */; };
+		67272B9E1E5907110026CA5B /* ViajeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67272B9D1E5907110026CA5B /* ViajeCell.swift */; };
+		67272BA11E591AE90026CA5B /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67272BA01E591AE90026CA5B /* MenuBar.swift */; };
+		6743CB871E523DBD002851C8 /* backgroundlogin11.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CB861E523DBD002851C8 /* backgroundlogin11.png */; };
+		6743CB891E523FF6002851C8 /* logo_adventure_ios_w.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CB881E523FF6002851C8 /* logo_adventure_ios_w.png */; };
+		6743CBEA1E542585002851C8 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE11E542585002851C8 /* like.png */; };
+		6743CBEB1E542585002851C8 /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE21E542585002851C8 /* like@2x.png */; };
+		6743CBEC1E542585002851C8 /* like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE31E542585002851C8 /* like@3x.png */; };
+		6743CBED1E542585002851C8 /* perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE41E542585002851C8 /* perfil.png */; };
+		6743CBEE1E542585002851C8 /* perfil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE51E542585002851C8 /* perfil@2x.png */; };
+		6743CBEF1E542585002851C8 /* perfil@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE61E542585002851C8 /* perfil@3x.png */; };
+		6743CBF01E542585002851C8 /* viajes.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE71E542585002851C8 /* viajes.png */; };
+		6743CBF11E542585002851C8 /* viajes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE81E542585002851C8 /* viajes@2x.png */; };
+		6743CBF21E542585002851C8 /* viajes@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6743CBE91E542585002851C8 /* viajes@3x.png */; };
+		674CFBBA1E5A58ED00322C01 /* Viaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CFBB91E5A58ED00322C01 /* Viaje.swift */; };
+		679975951E5228B300236B4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679975941E5228B300236B4B /* AppDelegate.swift */; };
+		679975971E5228B300236B4B /* ListViajeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679975961E5228B300236B4B /* ListViajeController.swift */; };
+		6799759A1E5228B300236B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679975981E5228B300236B4B /* Main.storyboard */; };
+		6799759C1E5228B300236B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6799759B1E5228B300236B4B /* Assets.xcassets */; };
+		6799759F1E5228B300236B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6799759D1E5228B300236B4B /* LaunchScreen.storyboard */; };
+		679975AA1E5228B300236B4B /* Lifes_AdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679975A91E5228B300236B4B /* Lifes_AdventureTests.swift */; };
+		679975B51E5228B300236B4B /* Lifes_AdventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679975B41E5228B300236B4B /* Lifes_AdventureUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		679975A61E5228B300236B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 679975891E5228B200236B4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 679975901E5228B200236B4B;
+			remoteInfo = "Lifes Adventure";
+		};
+		679975B11E5228B300236B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 679975891E5228B200236B4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 679975901E5228B200236B4B;
+			remoteInfo = "Lifes Adventure";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67272B9A1E5906770026CA5B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		67272B9D1E5907110026CA5B /* ViajeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViajeCell.swift; sourceTree = "<group>"; };
+		67272BA01E591AE90026CA5B /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		6743CB861E523DBD002851C8 /* backgroundlogin11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundlogin11.png; path = ../backgroundlogin11.png; sourceTree = "<group>"; };
+		6743CB881E523FF6002851C8 /* logo_adventure_ios_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_adventure_ios_w.png; path = ../logo_adventure_ios_w.png; sourceTree = "<group>"; };
+		6743CBE11E542585002851C8 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		6743CBE21E542585002851C8 /* like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like@2x.png"; sourceTree = "<group>"; };
+		6743CBE31E542585002851C8 /* like@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like@3x.png"; sourceTree = "<group>"; };
+		6743CBE41E542585002851C8 /* perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perfil.png; sourceTree = "<group>"; };
+		6743CBE51E542585002851C8 /* perfil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perfil@2x.png"; sourceTree = "<group>"; };
+		6743CBE61E542585002851C8 /* perfil@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perfil@3x.png"; sourceTree = "<group>"; };
+		6743CBE71E542585002851C8 /* viajes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viajes.png; sourceTree = "<group>"; };
+		6743CBE81E542585002851C8 /* viajes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viajes@2x.png"; sourceTree = "<group>"; };
+		6743CBE91E542585002851C8 /* viajes@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viajes@3x.png"; sourceTree = "<group>"; };
+		674CFBB91E5A58ED00322C01 /* Viaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viaje.swift; sourceTree = "<group>"; };
+		679975911E5228B300236B4B /* Lifes Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lifes Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		679975941E5228B300236B4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		679975961E5228B300236B4B /* ListViajeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViajeController.swift; sourceTree = "<group>"; };
+		679975991E5228B300236B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6799759B1E5228B300236B4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6799759E1E5228B300236B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		679975A01E5228B300236B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		679975A51E5228B300236B4B /* Lifes AdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lifes AdventureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		679975A91E5228B300236B4B /* Lifes_AdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifes_AdventureTests.swift; sourceTree = "<group>"; };
+		679975AB1E5228B300236B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		679975B01E5228B300236B4B /* Lifes AdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lifes AdventureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		679975B41E5228B300236B4B /* Lifes_AdventureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifes_AdventureUITests.swift; sourceTree = "<group>"; };
+		679975B61E5228B300236B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6799758E1E5228B200236B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679975A21E5228B300236B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679975AD1E5228B300236B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67272B971E5906310026CA5B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				67272B9A1E5906770026CA5B /* Extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		67272B9C1E5906EF0026CA5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67272B9D1E5907110026CA5B /* ViajeCell.swift */,
+				67272BA01E591AE90026CA5B /* MenuBar.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		67272B9F1E5907600026CA5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				679975961E5228B300236B4B /* ListViajeController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6743CBE01E542585002851C8 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6743CB861E523DBD002851C8 /* backgroundlogin11.png */,
+				6743CB881E523FF6002851C8 /* logo_adventure_ios_w.png */,
+				6743CBE11E542585002851C8 /* like.png */,
+				6743CBE21E542585002851C8 /* like@2x.png */,
+				6743CBE31E542585002851C8 /* like@3x.png */,
+				6743CBE41E542585002851C8 /* perfil.png */,
+				6743CBE51E542585002851C8 /* perfil@2x.png */,
+				6743CBE61E542585002851C8 /* perfil@3x.png */,
+				6743CBE71E542585002851C8 /* viajes.png */,
+				6743CBE81E542585002851C8 /* viajes@2x.png */,
+				6743CBE91E542585002851C8 /* viajes@3x.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		674CFBB81E5A58D600322C01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				674CFBB91E5A58ED00322C01 /* Viaje.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		679975881E5228B200236B4B = {
+			isa = PBXGroup;
+			children = (
+				679975931E5228B300236B4B /* Lifes Adventure */,
+				679975A81E5228B300236B4B /* Lifes AdventureTests */,
+				679975B31E5228B300236B4B /* Lifes AdventureUITests */,
+				679975921E5228B300236B4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		679975921E5228B300236B4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				679975911E5228B300236B4B /* Lifes Adventure.app */,
+				679975A51E5228B300236B4B /* Lifes AdventureTests.xctest */,
+				679975B01E5228B300236B4B /* Lifes AdventureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		679975931E5228B300236B4B /* Lifes Adventure */ = {
+			isa = PBXGroup;
+			children = (
+				674CFBB81E5A58D600322C01 /* Model */,
+				67272B9F1E5907600026CA5B /* Controller */,
+				67272B9C1E5906EF0026CA5B /* Views */,
+				67272B971E5906310026CA5B /* Helpers */,
+				6743CBE01E542585002851C8 /* ios */,
+				679975941E5228B300236B4B /* AppDelegate.swift */,
+				679975981E5228B300236B4B /* Main.storyboard */,
+				6799759B1E5228B300236B4B /* Assets.xcassets */,
+				6799759D1E5228B300236B4B /* LaunchScreen.storyboard */,
+				679975A01E5228B300236B4B /* Info.plist */,
+			);
+			path = "Lifes Adventure";
+			sourceTree = "<group>";
+		};
+		679975A81E5228B300236B4B /* Lifes AdventureTests */ = {
+			isa = PBXGroup;
+			children = (
+				679975A91E5228B300236B4B /* Lifes_AdventureTests.swift */,
+				679975AB1E5228B300236B4B /* Info.plist */,
+			);
+			path = "Lifes AdventureTests";
+			sourceTree = "<group>";
+		};
+		679975B31E5228B300236B4B /* Lifes AdventureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				679975B41E5228B300236B4B /* Lifes_AdventureUITests.swift */,
+				679975B61E5228B300236B4B /* Info.plist */,
+			);
+			path = "Lifes AdventureUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		679975901E5228B200236B4B /* Lifes Adventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679975B91E5228B300236B4B /* Build configuration list for PBXNativeTarget "Lifes Adventure" */;
+			buildPhases = (
+				6799758D1E5228B200236B4B /* Sources */,
+				6799758E1E5228B200236B4B /* Frameworks */,
+				6799758F1E5228B200236B4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lifes Adventure";
+			productName = "Lifes Adventure";
+			productReference = 679975911E5228B300236B4B /* Lifes Adventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		679975A41E5228B300236B4B /* Lifes AdventureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679975BC1E5228B300236B4B /* Build configuration list for PBXNativeTarget "Lifes AdventureTests" */;
+			buildPhases = (
+				679975A11E5228B300236B4B /* Sources */,
+				679975A21E5228B300236B4B /* Frameworks */,
+				679975A31E5228B300236B4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				679975A71E5228B300236B4B /* PBXTargetDependency */,
+			);
+			name = "Lifes AdventureTests";
+			productName = "Lifes AdventureTests";
+			productReference = 679975A51E5228B300236B4B /* Lifes AdventureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		679975AF1E5228B300236B4B /* Lifes AdventureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679975BF1E5228B300236B4B /* Build configuration list for PBXNativeTarget "Lifes AdventureUITests" */;
+			buildPhases = (
+				679975AC1E5228B300236B4B /* Sources */,
+				679975AD1E5228B300236B4B /* Frameworks */,
+				679975AE1E5228B300236B4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				679975B21E5228B300236B4B /* PBXTargetDependency */,
+			);
+			name = "Lifes AdventureUITests";
+			productName = "Lifes AdventureUITests";
+			productReference = 679975B01E5228B300236B4B /* Lifes AdventureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		679975891E5228B200236B4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Daniel Roldan Chavez";
+				TargetAttributes = {
+					679975901E5228B200236B4B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SH9JFUAY6G;
+						ProvisioningStyle = Automatic;
+					};
+					679975A41E5228B300236B4B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SH9JFUAY6G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 679975901E5228B200236B4B;
+					};
+					679975AF1E5228B300236B4B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SH9JFUAY6G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 679975901E5228B200236B4B;
+					};
+				};
+			};
+			buildConfigurationList = 6799758C1E5228B200236B4B /* Build configuration list for PBXProject "Lifes Adventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 679975881E5228B200236B4B;
+			productRefGroup = 679975921E5228B300236B4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				679975901E5228B200236B4B /* Lifes Adventure */,
+				679975A41E5228B300236B4B /* Lifes AdventureTests */,
+				679975AF1E5228B300236B4B /* Lifes AdventureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6799758F1E5228B200236B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6799759F1E5228B300236B4B /* LaunchScreen.storyboard in Resources */,
+				6743CBF21E542585002851C8 /* viajes@3x.png in Resources */,
+				6743CB891E523FF6002851C8 /* logo_adventure_ios_w.png in Resources */,
+				6743CBEA1E542585002851C8 /* like.png in Resources */,
+				6743CBF01E542585002851C8 /* viajes.png in Resources */,
+				6743CBEF1E542585002851C8 /* perfil@3x.png in Resources */,
+				6799759C1E5228B300236B4B /* Assets.xcassets in Resources */,
+				6743CBEB1E542585002851C8 /* like@2x.png in Resources */,
+				6743CBF11E542585002851C8 /* viajes@2x.png in Resources */,
+				6799759A1E5228B300236B4B /* Main.storyboard in Resources */,
+				6743CBEC1E542585002851C8 /* like@3x.png in Resources */,
+				6743CB871E523DBD002851C8 /* backgroundlogin11.png in Resources */,
+				6743CBEE1E542585002851C8 /* perfil@2x.png in Resources */,
+				6743CBED1E542585002851C8 /* perfil.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679975A31E5228B300236B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679975AE1E5228B300236B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6799758D1E5228B200236B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679975971E5228B300236B4B /* ListViajeController.swift in Sources */,
+				67272B9E1E5907110026CA5B /* ViajeCell.swift in Sources */,
+				67272B9B1E5906770026CA5B /* Extensions.swift in Sources */,
+				674CFBBA1E5A58ED00322C01 /* Viaje.swift in Sources */,
+				679975951E5228B300236B4B /* AppDelegate.swift in Sources */,
+				67272BA11E591AE90026CA5B /* MenuBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679975A11E5228B300236B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679975AA1E5228B300236B4B /* Lifes_AdventureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679975AC1E5228B300236B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679975B51E5228B300236B4B /* Lifes_AdventureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		679975A71E5228B300236B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 679975901E5228B200236B4B /* Lifes Adventure */;
+			targetProxy = 679975A61E5228B300236B4B /* PBXContainerItemProxy */;
+		};
+		679975B21E5228B300236B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 679975901E5228B200236B4B /* Lifes Adventure */;
+			targetProxy = 679975B11E5228B300236B4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		679975981E5228B300236B4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				679975991E5228B300236B4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6799759D1E5228B300236B4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6799759E1E5228B300236B4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		679975B71E5228B300236B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		679975B81E5228B300236B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		679975BA1E5228B300236B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SH9JFUAY6G;
+				INFOPLIST_FILE = "Lifes Adventure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.RoldanChavez.Lifes-Adventure";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		679975BB1E5228B300236B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SH9JFUAY6G;
+				INFOPLIST_FILE = "Lifes Adventure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.RoldanChavez.Lifes-Adventure";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		679975BD1E5228B300236B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SH9JFUAY6G;
+				INFOPLIST_FILE = "Lifes AdventureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.RoldanChavez.Lifes-AdventureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifes Adventure.app/Lifes Adventure";
+			};
+			name = Debug;
+		};
+		679975BE1E5228B300236B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SH9JFUAY6G;
+				INFOPLIST_FILE = "Lifes AdventureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.RoldanChavez.Lifes-AdventureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifes Adventure.app/Lifes Adventure";
+			};
+			name = Release;
+		};
+		679975C01E5228B300236B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SH9JFUAY6G;
+				INFOPLIST_FILE = "Lifes AdventureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.RoldanChavez.Lifes-AdventureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Lifes Adventure";
+			};
+			name = Debug;
+		};
+		679975C11E5228B300236B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SH9JFUAY6G;
+				INFOPLIST_FILE = "Lifes AdventureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.RoldanChavez.Lifes-AdventureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Lifes Adventure";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6799758C1E5228B200236B4B /* Build configuration list for PBXProject "Lifes Adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679975B71E5228B300236B4B /* Debug */,
+				679975B81E5228B300236B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		679975B91E5228B300236B4B /* Build configuration list for PBXNativeTarget "Lifes Adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679975BA1E5228B300236B4B /* Debug */,
+				679975BB1E5228B300236B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		679975BC1E5228B300236B4B /* Build configuration list for PBXNativeTarget "Lifes AdventureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679975BD1E5228B300236B4B /* Debug */,
+				679975BE1E5228B300236B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		679975BF1E5228B300236B4B /* Build configuration list for PBXNativeTarget "Lifes AdventureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679975C01E5228B300236B4B /* Debug */,
+				679975C11E5228B300236B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 679975891E5228B200236B4B /* Project object */;
+}

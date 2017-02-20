@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#279561</color>
-    <color name="colorPrimaryDark">#00715B</color>
-    <color name="colorAccent">#2E5EAA</color>
-    <color name="colorbackground">#2FB576</color>
-    <color name="colorLetterLogin">#FFFFFF</color>
-    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#003459</color>
+    <color name="colorPrimaryDark">#00171F</color>
+    <color name="colorAccent">#00A8E8</color>
+    <color name="colorbackground">#007EA7</color>
+    <color name="colorLetterLogin">#FDFFFC</color>
+    <color name="white">#FDFFFC</color>
+    <color name="whitetrans">#88FFFFFF</color>
+    <color name="textview_background_login_user">#FDFFFC</color>
+    <color name="black">#00171F</color>
+    <color name="tabSeleccion">#036335</color>
+    <color name="itemNo">#00715B</color>
+    <color name="filterIcon">#FFFFFF</color>
+    <color name="background1">#427799</color>
+    <color name="button">#D3537E</color>
 </resources>
 

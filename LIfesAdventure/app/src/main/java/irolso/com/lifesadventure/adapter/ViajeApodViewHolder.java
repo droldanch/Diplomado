@@ -9,7 +9,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import irolso.com.lifesadventure.R;
-import irolso.com.lifesadventure.model.Viaje;
+import irolso.com.lifesadventure.Response.ResponselistEvent;
 
 /**
  * Created by Roldan on 25/10/16.
@@ -17,24 +17,26 @@ import irolso.com.lifesadventure.model.Viaje;
 
 public class ViajeApodViewHolder extends RecyclerView.ViewHolder {
 
-    @BindView(R.id.titleNasaList)
-    TextView titleNasa;
+    @BindView(R.id.descriptionImagenTravel)
+    TextView descriptionImagenTravel;
+    @BindView(R.id.descriptionImagenTravel2)
+    TextView descriptionImagenTravel2;
     @BindView(R.id.imageNasaList)
     ImageView imageNasa;
-    @BindView(R.id.titleNasaContent)
-    TextView contentNasa;
-    @BindView(R.id.titleNasaContent2)
-    TextView contentNasa2;
+    @BindView(R.id.dateTravel)
+    TextView dateTravel;
+    @BindView(R.id.priceTravel)
+    TextView priceTravel;
 
     private ViajeApodAdapter.OnItemClickListener onItemClickListener;
-    private Viaje viaje;
+    private ResponselistEvent viaje;
 
     public ViajeApodViewHolder(View itemView) {
         super(itemView);
         ButterKnife.bind(this,itemView);
     }
 
-    public void setItemCLick(Viaje viaje, ViajeApodAdapter.OnItemClickListener onItemClickListener){
+    public void setItemCLick(ResponselistEvent viaje, ViajeApodAdapter.OnItemClickListener onItemClickListener){
         this.viaje = viaje;
         this.onItemClickListener = onItemClickListener;
     }

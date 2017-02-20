@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sing_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="irolso.com.lifesadventure.SingUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgroundlogin11"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/content_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/linearLayoutLogin_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/lienarlayout_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/radiusblanco"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_gravity="center">
+
+                    <EditText
+                        android:layout_margin="@dimen/textview_margin_login_user"
+                        android:background="@color/textview_background_login_user"
+                        android:id="@+id/registerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nombre"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <EditText
+                        android:layout_margin="@dimen/textview_margin_login_user"
+                        android:background="@color/textview_background_login_user"
+                        android:id="@+id/registerPaternal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/apellidoP"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"/>
+
+
+                    <EditText
+                        android:layout_margin="@dimen/textview_margin_login_user"
+                        android:background="@color/textview_background_login_user"
+                        android:id="@+id/registerMaternal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ApellidoM"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"/>
+
+
+                    <EditText
+                        android:layout_margin="@dimen/textview_margin_login_user"
+                        android:background="@color/textview_background_login_user"
+                        android:id="@+id/registerEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"/>
+
+
+
+                    <EditText
+                        android:layout_margin="@dimen/textview_margin_login_user"
+                        android:background="@color/textview_background_login_user"
+                        android:id="@+id/registerEmail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email_v"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <EditText
+                        android:layout_margin="@dimen/textview_margin_login_user"
+                        android:background="@color/textview_background_login_user"
+                        android:id="@+id/registerPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <EditText
+                        android:layout_margin="@dimen/textview_margin_login_user"
+                        android:background="@color/textview_background_login_user"
+                        android:id="@+id/registerPass2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password_v"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+
+        android:background="@color/colorAccent"
+        android:id="@+id/registerButtonSignUp"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/registrar"
+        android:textStyle="bold"
+        android:textColor="@color/colorLetterLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>
+
